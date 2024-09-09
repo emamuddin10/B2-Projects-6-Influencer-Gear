@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Variable</title>
+    <style>
+        :root{
+            --primary-color:gray;
+            --secondary-color:crimson;
+            --title-font: 35px;
+            --description-font:18px;
+        }
+        
+        
+        h1{
+            color: var(--primary-color);
+            font-size: var(--title-font);
+            
+        }
+        h5{
+           color:var(--primary-color);
+           font-size: var(--title-font);
+        }
+        .box{
+           background-color: var(--secondary-color);
+           border: 3px solid rgb(0, 0, 0);
+           /* width: 400px; */
+           width: calc(100% - 300px);
+           
+           
+        }
+        .box p{
+            font-size: var(--description-font);
+        }
+        section{
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+        .sidebar{
+            background-color: aqua;
+        }
+        .content{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> i am heading one </h1>
+    <h5>hi  i am headeing five</h5>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus in atque iure culpa debitis. Iste sit debitis eum quos illo possimus laudantium maiores iusto quis cupiditate eos, hic quo et quaerat deserunt corporis quasi alias aliquid harum facilis consectetur voluptatum! Ipsum suscipit aperiam quos architecto saepe? Aspernatur quas laboriosam in?</p>
+    </div>
+  <section>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+</section>
+    
+</body>
+</html>
